@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pipes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <script src=''></script>
+</head>
+<body>
+    <div>
+        {{title|uppercase}} <br>
+        {{title|lowercase}} <br>
+        {{number|currency}} <br>
+        {{today|date: 'fullDate'}} <br>
+        {{today|date: 'MMM'}} <br>
+        {{today|date: 'MMM' | uppercase}} <br> <!-- chaining -->
+        {{today|date}} <br>
+        {{today}} <br>
+        <!-- {{user.name}} <br> -->
+        {{user.salary|currency:'INR'}} <br>
+        {{user.name|customPipe:user.name}}
+
+    </div>
+</body>
+</html>
